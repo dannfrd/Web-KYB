@@ -1,0 +1,27 @@
+.noGap {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.sectionWrapper {
+  margin-top: -1px; /* Creates a slight overlap */
+  position: relative;
+  z-index: 1;
+}
+
+.connectingSections {
+  display: flex;
+  flex-direction: column;
+}
+
+.connectingSections > div {
+  margin-top: -1px;
+}
+
+/* Adjust any potential margins in child components */
+.connectingSections > div > * {
+  margin-top: 0;
+  padding-top: 0;
+}
